@@ -1,0 +1,55 @@
+Running "module reset". Resetting modules to system default. The following $MODULEPATH directories have been removed: None
+
+Currently Loaded Modules:
+  1) gcc/11.4.0      3) cuda/11.8.0         5) slurm-env/0.1
+  2) openmpi/4.1.6   4) cue-login-env/1.1   6) default-s11
+
+ 
+
+  DEPRECATION: Legacy editable install of alpa[dev]==1.0.0.dev0 from file:///scratch/bdkz/jshong/alpa (setup.py develop) is deprecated. pip 25.1 will enforce this behaviour change. A possible replacement is to add a pyproject.toml or enable --use-pep517, and use setuptools >= 64. If the resulting installation is not behaving as expected, try using --config-settings editable_mode=compat. Please consult the setuptools documentation for more information. Discussion can be found at https://github.com/pypa/pip/issues/11457
+Extracting Bazel installation...
+Starting local Bazel server and connecting to it...
+INFO: Options provided by the client:
+  Inherited 'common' options: --isatty=0 --terminal_columns=80
+INFO: Reading rc options for 'run' from /scratch/bdkz/jshong/alpa/build_jaxlib/.bazelrc:
+  Inherited 'common' options: --experimental_repo_remote_exec
+INFO: Reading rc options for 'run' from /scratch/bdkz/jshong/alpa/build_jaxlib/.bazelrc:
+  Inherited 'build' options: --apple_platform_type=macos --macos_minimum_os=10.14 --announce_rc --define open_source_build=true --spawn_strategy=standalone --enable_platform_specific_config --experimental_cc_shared_library --define=no_aws_support=true --define=no_gcp_support=true --define=no_hdfs_support=true --define=no_kafka_support=true --define=no_ignite_support=true --define=grpc_no_ares=true -c opt --config=short_logs --copt=-DMLIR_PYTHON_PACKAGE_PREFIX=jaxlib.mlir. --@org_tensorflow//tensorflow/compiler/xla/python:enable_gpu=false --@org_tensorflow//tensorflow/compiler/xla/python:enable_tpu=false --@org_tensorflow//tensorflow/compiler/xla/python:enable_plugin_device=false
+INFO: Reading rc options for 'run' from /scratch/bdkz/jshong/alpa/build_jaxlib/.jax_configure.bazelrc:
+  Inherited 'build' options: --strategy=Genrule=standalone --repo_env PYTHON_BIN_PATH=/u/jshong/miniconda3/envs/alpa/bin/python3 --action_env=PYENV_ROOT --python_path=/u/jshong/miniconda3/envs/alpa/bin/python3 --distinct_host_configuration=false --override_repository=org_tensorflow=/scratch/bdkz/jshong/alpa/build_jaxlib/../third_party/tensorflow-alpa --override_repository=local_config_nccl=/scratch/bdkz/jshong/third_party/local_nccl --action_env=CUDA_HOME=/sw/spack/deltas11-2023-03/apps/linux-rhel8-zen3/gcc-11.4.0/cuda-11.8.0-vfixfmc --action_env=CUDA_TOOLKIT_PATH=/sw/spack/deltas11-2023-03/apps/linux-rhel8-zen3/gcc-11.4.0/cuda-11.8.0-vfixfmc --action_env=CUDNN_INSTALL_PATH=/sw/external/libraries/cudnn-linux-x86_64-8.9.0.131_cuda11-archive --action_env=CUDNN_INCLUDE_DIR=/sw/external/libraries/cudnn-linux-x86_64-8.9.0.131_cuda11-archive/include --action_env=CUDNN_LIB_DIR=/sw/external/libraries/cudnn-linux-x86_64-8.9.0.131_cuda11-archive/lib --action_env=CUDNN_HOME=/sw/external/libraries/cudnn-linux-x86_64-8.9.0.131_cuda11-archive --action_env=TF_CUDA_PATHS=/sw/spack/deltas11-2023-03/apps/linux-rhel8-zen3/gcc-11.4.0/cuda-11.8.0-vfixfmc --action_env=TF_CUDA_VERSION=11.8 --action_env=TF_CUDNN_VERSION=8 --action_env=TF_NEED_CUDA=1 --action_env=TF_CUDA_COMPUTE_CAPABILITIES=86 --action_env=NCCL_HOME=/sw/spack/deltas11-2023-03/apps/linux-rhel8-zen3/gcc-11.4.0/nccl-2.19.3-1-464jrf3 --action_env=NCCL_INCLUDE_DIR=/sw/spack/deltas11-2023-03/apps/linux-rhel8-zen3/gcc-11.4.0/nccl-2.19.3-1-464jrf3/include --action_env=NCCL_LIB_DIR=/sw/spack/deltas11-2023-03/apps/linux-rhel8-zen3/gcc-11.4.0/nccl-2.19.3-1-464jrf3/lib --action_env=TF_NCCL_VERSION=2.19.3 --action_env=TF_NCCL_PATHS=/sw/spack/deltas11-2023-03/apps/linux-rhel8-zen3/gcc-11.4.0/nccl-2.19.3-1-464jrf3 --action_env=PATH=/sw/spack/deltas11-2023-03/apps/linux-rhel8-zen3/gcc-11.4.0/cuda-11.8.0-vfixfmc/bin:/opt/cray/libfabric/1.15.2.0/bin:/u/jshong/miniconda3/envs/alpa/bin:/sw/spack/deltas11-2023-03/apps/linux-rhel8-zen3/gcc-11.4.0/cuda-11.8.0-vfixfmc/bin:/sw/spack/deltas11-2023-03/apps/linux-rhel8-zen3/gcc-11.4.0/openmpi-4.1.6-lranp74/bin:/sw/spack/deltas11-2023-03/apps/linux-rhel8-x86_64/gcc-8.5.0/gcc-11.4.0-yycklku/bin:/sw/user/scripts:/u/jshong/miniconda3/condabin:/u/jshong/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/bin/remote-cli:/u/jshong/.local/bin:/u/jshong/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ddn/ime/bin:/opt/puppetlabs/bin:/u/jshong/.vscode-server/extensions/ms-python.debugpy-2025.4.1-linux-x64/bundled/scripts/noConfigScripts --action_env=LD_LIBRARY_PATH=/sw/spack/deltas11-2023-03/apps/linux-rhel8-zen3/gcc-11.4.0/nccl-2.19.3-1-464jrf3/lib:/sw/external/libraries/cudnn-linux-x86_64-8.9.0.131_cuda11-archive/lib:/sw/external/libraries/cudnn-linux-x86_64-8.9.0.131_cuda11-archive/lib:/sw/external/slingshot11/aws-ofi-nccl-1.6.0-plugin/lib:/sw/spack/deltas11-2023-03/apps/linux-rhel8-zen3/gcc-11.4.0/nccl-2.19.3-1-464jrf3/lib:/opt/cray/libfabric/1.15.2.0/lib64:/sw/spack/deltas11-2023-03/apps/linux-rhel8-zen3/gcc-11.4.0/cuda-11.8.0-vfixfmc/lib64:/opt/cray/libfabric/1.15.2.0/lib:/sw/spack/deltas11-2023-03/apps/linux-rhel8-zen3/gcc-11.4.0/openmpi-4.1.6-lranp74/lib --action_env=CPATH=/sw/spack/deltas11-2023-03/apps/linux-rhel8-zen3/gcc-11.4.0/nccl-2.19.3-1-464jrf3/include:/sw/external/libraries/cudnn-linux-x86_64-8.9.0.131_cuda11-archive/include: --action_env=LIBRARY_PATH=/sw/spack/deltas11-2023-03/apps/linux-rhel8-zen3/gcc-11.4.0/nccl-2.19.3-1-464jrf3/lib:/sw/external/libraries/cudnn-linux-x86_64-8.9.0.131_cuda11-archive/lib:/sw/spack/deltas11-2023-03/apps/linux-rhel8-zen3/gcc-11.4.0/nccl-2.19.3-1-464jrf3/lib:/sw/spack/deltas11-2023-03/apps/linux-rhel8-zen3/gcc-11.4.0/gcc-runtime-11.4.0-zz3o2s4/lib:/sw/spack/deltas11-2023-03/apps/linux-rhel8-zen3/gcc-11.4.0/cuda-11.8.0-vfixfmc/lib64:/sw/spack/deltas11-2023-03/apps/linux-rhel8-zen3/gcc-11.4.0/openmpi-4.1.6-lranp74/lib:/sw/spack/deltas11-2023-03/apps/linux-rhel8-x86_64/gcc-8.5.0/gcc-11.4.0-yycklku/lib64:/sw/spack/deltas11-2023-03/apps/linux-rhel8-x86_64/gcc-8.5.0/gcc-11.4.0-yycklku/lib --config=avx_posix --config=mkl_open_source_only --config=cuda --action_env TF_NCCL_VERSION=2.19.3
+INFO: Found applicable config definition build:short_logs in file /scratch/bdkz/jshong/alpa/build_jaxlib/.bazelrc: --output_filter=DONT_MATCH_ANYTHING
+INFO: Found applicable config definition build:avx_posix in file /scratch/bdkz/jshong/alpa/build_jaxlib/.bazelrc: --copt=-mavx --host_copt=-mavx
+INFO: Found applicable config definition build:mkl_open_source_only in file /scratch/bdkz/jshong/alpa/build_jaxlib/.bazelrc: --define=tensorflow_mkldnn_contraction_kernel=1
+INFO: Found applicable config definition build:cuda in file /scratch/bdkz/jshong/alpa/build_jaxlib/.bazelrc: --repo_env TF_NEED_CUDA=1 --action_env TF_CUDA_COMPUTE_CAPABILITIES=sm_35,sm_52,sm_60,sm_70,compute_80 --crosstool_top=@local_config_cuda//crosstool:toolchain --@local_config_cuda//:enable_cuda --@org_tensorflow//tensorflow/compiler/xla/python:enable_gpu=true --define=xla_python_enable_gpu=true
+INFO: Found applicable config definition build:linux in file /scratch/bdkz/jshong/alpa/build_jaxlib/.bazelrc: --config=posix --copt=-Wno-unknown-warning-option --copt=-Wno-stringop-truncation --copt=-Wno-array-parameter
+INFO: Found applicable config definition build:posix in file /scratch/bdkz/jshong/alpa/build_jaxlib/.bazelrc: --copt=-fvisibility=hidden --copt=-Wno-sign-compare --cxxopt=-std=c++17 --host_cxxopt=-std=c++17
+WARNING: Download from https://storage.googleapis.com/mirror.tensorflow.org/github.com/tensorflow/runtime/archive/4ce3e4da2e21ae4dfcee9366415e55f408c884ec.tar.gz failed: class java.io.FileNotFoundException GET returned 404 Not Found
+DEBUG: /scratch/bdkz/jshong/cache/bazel/_bazel_jshong/cb4c035d09312e9d44318b9b7690cf91/external/bazel_tools/tools/cpp/lib_cc_configure.bzl:118:10: 
+Auto-Configuration Warning: 'TMP' environment variable is not set, using 'C:\Windows\Temp' as default
+Loading: 
+Loading: 2 packages loaded
+Analyzing: target //build:build_wheel (3 packages loaded, 0 targets configured)
+WARNING: Download from https://mirror.bazel.build/github.com/bazelbuild/rules_cc/archive/081771d4a0e9d7d3aa0eed2ef389fa4700dfb23e.tar.gz failed: class java.io.FileNotFoundException GET returned 404 Not Found
+WARNING: Download from https://storage.googleapis.com/mirror.tensorflow.org/github.com/openxla/stablehlo/archive/fdd47908468488cbbb386bb7fc723dc19321cb83.zip failed: class java.io.FileNotFoundException GET returned 404 Not Found
+WARNING: Download from https://storage.googleapis.com/mirror.tensorflow.org/github.com/NVIDIA/cudnn-frontend/archive/refs/tags/v0.7.1.zip failed: class java.io.FileNotFoundException GET returned 404 Not Found
+Analyzing: target //build:build_wheel (274 packages loaded, 17449 targets configured)
+INFO: Analyzed target //build:build_wheel (275 packages loaded, 18387 targets configured).
+INFO: Found 1 target...
+[0 / 19] [Prepa] Creating source manifest for //build:build_wheel
+[6,829 / 7,764] Compiling llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp; 117s local ... (64 actions, 63 running)
+[10,087 / 10,590] Compiling tensorflow/core/transforms/constant_folding/pass.cc; 61s local ... (64 actions, 63 running)
+Target //build:build_wheel up-to-date:
+  bazel-bin/build/build_wheel
+INFO: Elapsed time: 5017.499s, Critical Path: 406.32s
+INFO: 12345 processes: 3838 internal, 8507 local.
+INFO: Build completed successfully, 12345 total actions
+INFO: Running command line: bazel-bin/build/build_wheel '--output_path=/scratch/bdkz/jshong/alpa/build_jaxlib/dist' '--cpu=x86_64' --dev_install
+INFO: Build completed successfully, 12345 total actions
+Dev Install:
+Run "pip install -e ." once in /scratch/bdkz/jshong/alpa/build_jaxlib/dist
+
+real	83m52.684s
+user	0m2.769s
+sys	0m4.274s
+  DEPRECATION: Legacy editable install of jaxlib==0.3.22 from file:///scratch/bdkz/jshong/alpa/build_jaxlib/dist (setup.py develop) is deprecated. pip 25.1 will enforce this behaviour change. A possible replacement is to add a pyproject.toml or enable --use-pep517, and use setuptools >= 64. If the resulting installation is not behaving as expected, try using --config-settings editable_mode=compat. Please consult the setuptools documentation for more information. Discussion can be found at https://github.com/pypa/pip/issues/11457
+python3: can't open file '/scratch/bdkz/jshong/alpa/alpa_run.py': [Errno 2] No such file or directory

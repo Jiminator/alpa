@@ -1,0 +1,301 @@
+job is starting on gpub016.delta.ncsa.illinois.edu
+Requirement already satisfied: pip in /u/jshong/miniconda3/envs/alpa/lib/python3.11/site-packages (25.0)
+Collecting pip
+  Using cached pip-25.0.1-py3-none-any.whl.metadata (3.7 kB)
+Using cached pip-25.0.1-py3-none-any.whl (1.8 MB)
+Installing collected packages: pip
+  Attempting uninstall: pip
+    Found existing installation: pip 25.0
+    Uninstalling pip-25.0:
+      Successfully uninstalled pip-25.0
+Successfully installed pip-25.0.1
+Collecting cupy-cuda11x
+  Using cached cupy_cuda11x-13.4.1-cp311-cp311-manylinux2014_x86_64.whl.metadata (2.7 kB)
+Collecting numpy<2.3,>=1.22 (from cupy-cuda11x)
+  Using cached numpy-2.2.4-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (62 kB)
+Collecting fastrlock>=0.5 (from cupy-cuda11x)
+  Using cached fastrlock-0.8.3-cp311-cp311-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_28_x86_64.whl.metadata (7.7 kB)
+Using cached cupy_cuda11x-13.4.1-cp311-cp311-manylinux2014_x86_64.whl (100.0 MB)
+Using cached fastrlock-0.8.3-cp311-cp311-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_28_x86_64.whl (54 kB)
+Using cached numpy-2.2.4-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (16.4 MB)
+Installing collected packages: fastrlock, numpy, cupy-cuda11x
+Successfully installed cupy-cuda11x-13.4.1 fastrlock-0.8.3 numpy-2.2.4
+Obtaining file:///scratch/bdkz/jshong/alpa
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting tqdm (from alpa==1.0.0.dev0)
+  Using cached tqdm-4.67.1-py3-none-any.whl.metadata (57 kB)
+Collecting ray (from alpa==1.0.0.dev0)
+  Using cached ray-2.44.1-cp311-cp311-manylinux2014_x86_64.whl.metadata (19 kB)
+Collecting jax==0.3.22 (from alpa==1.0.0.dev0)
+  Using cached jax-0.3.22-py3-none-any.whl
+Collecting chex==0.1.5 (from alpa==1.0.0.dev0)
+  Using cached chex-0.1.5-py3-none-any.whl.metadata (17 kB)
+Collecting flax==0.6.2 (from alpa==1.0.0.dev0)
+  Using cached flax-0.6.2-py3-none-any.whl.metadata (9.5 kB)
+Collecting pulp>=2.6.0 (from alpa==1.0.0.dev0)
+  Using cached pulp-3.1.1-py3-none-any.whl.metadata (1.3 kB)
+Collecting numpy<2.0.0 (from alpa==1.0.0.dev0)
+  Using cached numpy-1.26.4-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (61 kB)
+Collecting numba (from alpa==1.0.0.dev0)
+  Using cached numba-0.61.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (2.8 kB)
+Collecting absl-py>=0.9.0 (from chex==0.1.5->alpa==1.0.0.dev0)
+  Using cached absl_py-2.2.1-py3-none-any.whl.metadata (2.4 kB)
+Collecting dm-tree>=0.1.5 (from chex==0.1.5->alpa==1.0.0.dev0)
+  Using cached dm_tree-0.1.9-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (2.2 kB)
+Collecting jaxlib>=0.1.37 (from chex==0.1.5->alpa==1.0.0.dev0)
+  Using cached jaxlib-0.5.3-cp311-cp311-manylinux2014_x86_64.whl.metadata (1.2 kB)
+Collecting toolz>=0.9.0 (from chex==0.1.5->alpa==1.0.0.dev0)
+  Using cached toolz-1.0.0-py3-none-any.whl.metadata (5.1 kB)
+Collecting matplotlib (from flax==0.6.2->alpa==1.0.0.dev0)
+  Using cached matplotlib-3.10.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (11 kB)
+Collecting msgpack (from flax==0.6.2->alpa==1.0.0.dev0)
+  Using cached msgpack-1.1.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (8.4 kB)
+Collecting optax (from flax==0.6.2->alpa==1.0.0.dev0)
+  Using cached optax-0.2.4-py3-none-any.whl.metadata (8.3 kB)
+Collecting tensorstore (from flax==0.6.2->alpa==1.0.0.dev0)
+  Using cached tensorstore-0.1.73-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (21 kB)
+Collecting rich>=11.1 (from flax==0.6.2->alpa==1.0.0.dev0)
+  Using cached rich-13.9.4-py3-none-any.whl.metadata (18 kB)
+Collecting typing-extensions>=4.1.1 (from flax==0.6.2->alpa==1.0.0.dev0)
+  Using cached typing_extensions-4.13.0-py3-none-any.whl.metadata (3.0 kB)
+Collecting PyYAML>=5.4.1 (from flax==0.6.2->alpa==1.0.0.dev0)
+  Using cached PyYAML-6.0.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (2.1 kB)
+Collecting opt_einsum (from jax==0.3.22->alpa==1.0.0.dev0)
+  Using cached opt_einsum-3.4.0-py3-none-any.whl.metadata (6.3 kB)
+Collecting scipy>=1.5 (from jax==0.3.22->alpa==1.0.0.dev0)
+  Using cached scipy-1.15.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (61 kB)
+Collecting etils[epath] (from jax==0.3.22->alpa==1.0.0.dev0)
+  Using cached etils-1.12.2-py3-none-any.whl.metadata (6.5 kB)
+Collecting yapf==0.32.0 (from alpa==1.0.0.dev0)
+  Using cached yapf-0.32.0-py2.py3-none-any.whl.metadata (34 kB)
+Collecting pylint==2.14.0 (from alpa==1.0.0.dev0)
+  Using cached pylint-2.14.0-py3-none-any.whl.metadata (9.6 kB)
+Collecting cmake (from alpa==1.0.0.dev0)
+  Using cached cmake-4.0.0-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.3 kB)
+Collecting pybind11 (from alpa==1.0.0.dev0)
+  Using cached pybind11-2.13.6-py3-none-any.whl.metadata (9.5 kB)
+Requirement already satisfied: cupy-cuda11x in /u/jshong/miniconda3/envs/alpa/lib/python3.11/site-packages (from alpa==1.0.0.dev0) (13.4.1)
+Collecting dill>=0.2 (from pylint==2.14.0->alpa==1.0.0.dev0)
+  Using cached dill-0.3.9-py3-none-any.whl.metadata (10 kB)
+Collecting platformdirs>=2.2.0 (from pylint==2.14.0->alpa==1.0.0.dev0)
+  Using cached platformdirs-4.3.7-py3-none-any.whl.metadata (11 kB)
+Collecting astroid<=2.12.0-dev0,>=2.11.5 (from pylint==2.14.0->alpa==1.0.0.dev0)
+  Using cached astroid-2.11.7-py3-none-any.whl.metadata (4.7 kB)
+Collecting isort<6,>=4.2.5 (from pylint==2.14.0->alpa==1.0.0.dev0)
+  Using cached isort-5.13.2-py3-none-any.whl.metadata (12 kB)
+Collecting mccabe<0.8,>=0.6 (from pylint==2.14.0->alpa==1.0.0.dev0)
+  Using cached mccabe-0.7.0-py2.py3-none-any.whl.metadata (5.0 kB)
+Collecting tomlkit>=0.10.1 (from pylint==2.14.0->alpa==1.0.0.dev0)
+  Using cached tomlkit-0.13.2-py3-none-any.whl.metadata (2.7 kB)
+Requirement already satisfied: fastrlock>=0.5 in /u/jshong/miniconda3/envs/alpa/lib/python3.11/site-packages (from cupy-cuda11x->alpa==1.0.0.dev0) (0.8.3)
+Collecting llvmlite<0.45,>=0.44.0dev0 (from numba->alpa==1.0.0.dev0)
+  Using cached llvmlite-0.44.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.8 kB)
+Collecting click>=7.0 (from ray->alpa==1.0.0.dev0)
+  Using cached click-8.1.8-py3-none-any.whl.metadata (2.3 kB)
+Collecting filelock (from ray->alpa==1.0.0.dev0)
+  Using cached filelock-3.18.0-py3-none-any.whl.metadata (2.9 kB)
+Collecting jsonschema (from ray->alpa==1.0.0.dev0)
+  Using cached jsonschema-4.23.0-py3-none-any.whl.metadata (7.9 kB)
+Collecting packaging (from ray->alpa==1.0.0.dev0)
+  Using cached packaging-24.2-py3-none-any.whl.metadata (3.2 kB)
+Collecting protobuf!=3.19.5,>=3.15.3 (from ray->alpa==1.0.0.dev0)
+  Using cached protobuf-6.30.2-cp39-abi3-manylinux2014_x86_64.whl.metadata (593 bytes)
+Collecting aiosignal (from ray->alpa==1.0.0.dev0)
+  Using cached aiosignal-1.3.2-py2.py3-none-any.whl.metadata (3.8 kB)
+Collecting frozenlist (from ray->alpa==1.0.0.dev0)
+  Using cached frozenlist-1.5.0-cp311-cp311-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (13 kB)
+Collecting requests (from ray->alpa==1.0.0.dev0)
+  Using cached requests-2.32.3-py3-none-any.whl.metadata (4.6 kB)
+Collecting lazy-object-proxy>=1.4.0 (from astroid<=2.12.0-dev0,>=2.11.5->pylint==2.14.0->alpa==1.0.0.dev0)
+  Using cached lazy_object_proxy-1.10.0-cp311-cp311-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (7.8 kB)
+Collecting wrapt<2,>=1.11 (from astroid<=2.12.0-dev0,>=2.11.5->pylint==2.14.0->alpa==1.0.0.dev0)
+  Using cached wrapt-1.17.2-cp311-cp311-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.4 kB)
+Requirement already satisfied: setuptools>=20.0 in /u/jshong/miniconda3/envs/alpa/lib/python3.11/site-packages (from astroid<=2.12.0-dev0,>=2.11.5->pylint==2.14.0->alpa==1.0.0.dev0) (75.8.0)
+Collecting attrs>=18.2.0 (from dm-tree>=0.1.5->chex==0.1.5->alpa==1.0.0.dev0)
+  Using cached attrs-25.3.0-py3-none-any.whl.metadata (10 kB)
+Collecting ml_dtypes>=0.2.0 (from jaxlib>=0.1.37->chex==0.1.5->alpa==1.0.0.dev0)
+  Using cached ml_dtypes-0.5.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (21 kB)
+Collecting markdown-it-py>=2.2.0 (from rich>=11.1->flax==0.6.2->alpa==1.0.0.dev0)
+  Using cached markdown_it_py-3.0.0-py3-none-any.whl.metadata (6.9 kB)
+Collecting pygments<3.0.0,>=2.13.0 (from rich>=11.1->flax==0.6.2->alpa==1.0.0.dev0)
+  Using cached pygments-2.19.1-py3-none-any.whl.metadata (2.5 kB)
+Collecting fsspec (from etils[epath]->jax==0.3.22->alpa==1.0.0.dev0)
+  Using cached fsspec-2025.3.0-py3-none-any.whl.metadata (11 kB)
+Collecting importlib_resources (from etils[epath]->jax==0.3.22->alpa==1.0.0.dev0)
+  Using cached importlib_resources-6.5.2-py3-none-any.whl.metadata (3.9 kB)
+Collecting zipp (from etils[epath]->jax==0.3.22->alpa==1.0.0.dev0)
+  Using cached zipp-3.21.0-py3-none-any.whl.metadata (3.7 kB)
+Collecting jsonschema-specifications>=2023.03.6 (from jsonschema->ray->alpa==1.0.0.dev0)
+  Using cached jsonschema_specifications-2024.10.1-py3-none-any.whl.metadata (3.0 kB)
+Collecting referencing>=0.28.4 (from jsonschema->ray->alpa==1.0.0.dev0)
+  Using cached referencing-0.36.2-py3-none-any.whl.metadata (2.8 kB)
+Collecting rpds-py>=0.7.1 (from jsonschema->ray->alpa==1.0.0.dev0)
+  Using cached rpds_py-0.24.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.1 kB)
+Collecting contourpy>=1.0.1 (from matplotlib->flax==0.6.2->alpa==1.0.0.dev0)
+  Using cached contourpy-1.3.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (5.4 kB)
+Collecting cycler>=0.10 (from matplotlib->flax==0.6.2->alpa==1.0.0.dev0)
+  Using cached cycler-0.12.1-py3-none-any.whl.metadata (3.8 kB)
+Collecting fonttools>=4.22.0 (from matplotlib->flax==0.6.2->alpa==1.0.0.dev0)
+  Using cached fonttools-4.56.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (101 kB)
+Collecting kiwisolver>=1.3.1 (from matplotlib->flax==0.6.2->alpa==1.0.0.dev0)
+  Using cached kiwisolver-1.4.8-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.2 kB)
+Collecting pillow>=8 (from matplotlib->flax==0.6.2->alpa==1.0.0.dev0)
+  Using cached pillow-11.1.0-cp311-cp311-manylinux_2_28_x86_64.whl.metadata (9.1 kB)
+Collecting pyparsing>=2.3.1 (from matplotlib->flax==0.6.2->alpa==1.0.0.dev0)
+  Using cached pyparsing-3.2.3-py3-none-any.whl.metadata (5.0 kB)
+Collecting python-dateutil>=2.7 (from matplotlib->flax==0.6.2->alpa==1.0.0.dev0)
+  Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+INFO: pip is looking at multiple versions of optax to determine which version is compatible with other requirements. This could take a while.
+Collecting optax (from flax==0.6.2->alpa==1.0.0.dev0)
+  Using cached optax-0.2.3-py3-none-any.whl.metadata (8.3 kB)
+  Using cached optax-0.2.2-py3-none-any.whl.metadata (8.1 kB)
+  Using cached optax-0.2.1-py3-none-any.whl.metadata (8.0 kB)
+  Using cached optax-0.2.0-py3-none-any.whl.metadata (8.0 kB)
+  Using cached optax-0.1.9-py3-none-any.whl.metadata (6.7 kB)
+  Using cached optax-0.1.8-py3-none-any.whl.metadata (14 kB)
+  Using cached optax-0.1.7-py3-none-any.whl.metadata (13 kB)
+Collecting charset-normalizer<4,>=2 (from requests->ray->alpa==1.0.0.dev0)
+  Using cached charset_normalizer-3.4.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (35 kB)
+Collecting idna<4,>=2.5 (from requests->ray->alpa==1.0.0.dev0)
+  Using cached idna-3.10-py3-none-any.whl.metadata (10 kB)
+Collecting urllib3<3,>=1.21.1 (from requests->ray->alpa==1.0.0.dev0)
+  Using cached urllib3-2.3.0-py3-none-any.whl.metadata (6.5 kB)
+Collecting certifi>=2017.4.17 (from requests->ray->alpa==1.0.0.dev0)
+  Using cached certifi-2025.1.31-py3-none-any.whl.metadata (2.5 kB)
+Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich>=11.1->flax==0.6.2->alpa==1.0.0.dev0)
+  Using cached mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+Collecting six>=1.5 (from python-dateutil>=2.7->matplotlib->flax==0.6.2->alpa==1.0.0.dev0)
+  Using cached six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Using cached chex-0.1.5-py3-none-any.whl (85 kB)
+Using cached flax-0.6.2-py3-none-any.whl (189 kB)
+Using cached pylint-2.14.0-py3-none-any.whl (485 kB)
+Using cached yapf-0.32.0-py2.py3-none-any.whl (190 kB)
+Using cached numpy-1.26.4-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (18.3 MB)
+Using cached pulp-3.1.1-py3-none-any.whl (16.4 MB)
+Using cached cmake-4.0.0-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (27.9 MB)
+Using cached numba-0.61.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (3.8 MB)
+Using cached pybind11-2.13.6-py3-none-any.whl (243 kB)
+Using cached ray-2.44.1-cp311-cp311-manylinux2014_x86_64.whl (68.1 MB)
+Using cached tqdm-4.67.1-py3-none-any.whl (78 kB)
+Using cached absl_py-2.2.1-py3-none-any.whl (277 kB)
+Using cached astroid-2.11.7-py3-none-any.whl (251 kB)
+Using cached click-8.1.8-py3-none-any.whl (98 kB)
+Using cached dill-0.3.9-py3-none-any.whl (119 kB)
+Using cached dm_tree-0.1.9-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (152 kB)
+Using cached isort-5.13.2-py3-none-any.whl (92 kB)
+Using cached jaxlib-0.5.3-cp311-cp311-manylinux2014_x86_64.whl (105.1 MB)
+Using cached llvmlite-0.44.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (42.4 MB)
+Using cached mccabe-0.7.0-py2.py3-none-any.whl (7.3 kB)
+Using cached msgpack-1.1.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (403 kB)
+Using cached platformdirs-4.3.7-py3-none-any.whl (18 kB)
+Using cached protobuf-6.30.2-cp39-abi3-manylinux2014_x86_64.whl (316 kB)
+Using cached PyYAML-6.0.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (762 kB)
+Using cached rich-13.9.4-py3-none-any.whl (242 kB)
+Using cached scipy-1.15.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (37.6 MB)
+Using cached tomlkit-0.13.2-py3-none-any.whl (37 kB)
+Using cached toolz-1.0.0-py3-none-any.whl (56 kB)
+Using cached typing_extensions-4.13.0-py3-none-any.whl (45 kB)
+Using cached aiosignal-1.3.2-py2.py3-none-any.whl (7.6 kB)
+Using cached frozenlist-1.5.0-cp311-cp311-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (274 kB)
+Using cached filelock-3.18.0-py3-none-any.whl (16 kB)
+Using cached jsonschema-4.23.0-py3-none-any.whl (88 kB)
+Using cached matplotlib-3.10.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (8.6 MB)
+Using cached packaging-24.2-py3-none-any.whl (65 kB)
+Using cached opt_einsum-3.4.0-py3-none-any.whl (71 kB)
+Using cached optax-0.1.7-py3-none-any.whl (154 kB)
+Using cached requests-2.32.3-py3-none-any.whl (64 kB)
+Using cached tensorstore-0.1.73-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (18.3 MB)
+Using cached attrs-25.3.0-py3-none-any.whl (63 kB)
+Using cached certifi-2025.1.31-py3-none-any.whl (166 kB)
+Using cached charset_normalizer-3.4.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (143 kB)
+Using cached contourpy-1.3.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (326 kB)
+Using cached cycler-0.12.1-py3-none-any.whl (8.3 kB)
+Using cached fonttools-4.56.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (4.9 MB)
+Using cached idna-3.10-py3-none-any.whl (70 kB)
+Using cached jsonschema_specifications-2024.10.1-py3-none-any.whl (18 kB)
+Using cached kiwisolver-1.4.8-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.4 MB)
+Using cached lazy_object_proxy-1.10.0-cp311-cp311-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (69 kB)
+Using cached markdown_it_py-3.0.0-py3-none-any.whl (87 kB)
+Using cached ml_dtypes-0.5.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (4.7 MB)
+Using cached pillow-11.1.0-cp311-cp311-manylinux_2_28_x86_64.whl (4.5 MB)
+Using cached pygments-2.19.1-py3-none-any.whl (1.2 MB)
+Using cached pyparsing-3.2.3-py3-none-any.whl (111 kB)
+Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Using cached referencing-0.36.2-py3-none-any.whl (26 kB)
+Using cached rpds_py-0.24.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (389 kB)
+Using cached urllib3-2.3.0-py3-none-any.whl (128 kB)
+Using cached wrapt-1.17.2-cp311-cp311-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (83 kB)
+Using cached etils-1.12.2-py3-none-any.whl (167 kB)
+Using cached fsspec-2025.3.0-py3-none-any.whl (193 kB)
+Using cached importlib_resources-6.5.2-py3-none-any.whl (37 kB)
+Using cached zipp-3.21.0-py3-none-any.whl (9.6 kB)
+Using cached mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+Using cached six-1.17.0-py2.py3-none-any.whl (11 kB)
+Installing collected packages: yapf, zipp, wrapt, urllib3, typing-extensions, tqdm, toolz, tomlkit, six, rpds-py, PyYAML, pyparsing, pygments, pybind11, pulp, protobuf, platformdirs, pillow, packaging, opt_einsum, numpy, msgpack, mdurl, mccabe, llvmlite, lazy-object-proxy, kiwisolver, isort, importlib_resources, idna, fsspec, frozenlist, fonttools, filelock, etils, dill, cycler, cmake, click, charset-normalizer, certifi, attrs, absl-py, scipy, requests, referencing, python-dateutil, numba, ml_dtypes, markdown-it-py, dm-tree, contourpy, astroid, aiosignal, tensorstore, rich, pylint, matplotlib, jsonschema-specifications, jaxlib, jsonschema, jax, ray, chex, optax, flax, alpa
+  Attempting uninstall: numpy
+    Found existing installation: numpy 2.2.4
+    Uninstalling numpy-2.2.4:
+      Successfully uninstalled numpy-2.2.4
+  Running setup.py develop for alpa
+Successfully installed PyYAML-6.0.2 absl-py-2.2.1 aiosignal-1.3.2 alpa-1.0.0.dev0 astroid-2.11.7 attrs-25.3.0 certifi-2025.1.31 charset-normalizer-3.4.1 chex-0.1.5 click-8.1.8 cmake-4.0.0 contourpy-1.3.1 cycler-0.12.1 dill-0.3.9 dm-tree-0.1.9 etils-1.12.2 filelock-3.18.0 flax-0.6.2 fonttools-4.56.0 frozenlist-1.5.0 fsspec-2025.3.0 idna-3.10 importlib_resources-6.5.2 isort-5.13.2 jax-0.3.22 jaxlib-0.5.3 jsonschema-4.23.0 jsonschema-specifications-2024.10.1 kiwisolver-1.4.8 lazy-object-proxy-1.10.0 llvmlite-0.44.0 markdown-it-py-3.0.0 matplotlib-3.10.1 mccabe-0.7.0 mdurl-0.1.2 ml_dtypes-0.5.1 msgpack-1.1.0 numba-0.61.0 numpy-1.26.4 opt_einsum-3.4.0 optax-0.1.7 packaging-24.2 pillow-11.1.0 platformdirs-4.3.7 protobuf-6.30.2 pulp-3.1.1 pybind11-2.13.6 pygments-2.19.1 pylint-2.14.0 pyparsing-3.2.3 python-dateutil-2.9.0.post0 ray-2.44.1 referencing-0.36.2 requests-2.32.3 rich-13.9.4 rpds-py-0.24.0 scipy-1.15.2 six-1.17.0 tensorstore-0.1.73 tomlkit-0.13.2 toolz-1.0.0 tqdm-4.67.1 typing-extensions-4.13.0 urllib3-2.3.0 wrapt-1.17.2 yapf-0.32.0 zipp-3.21.0
+
+     _   _  __  __
+    | | / \ \ \/ /
+ _  | |/ _ \ \  /
+| |_| / ___ \/  \
+ \___/_/   \/_/\_\
+
+
+Bazel binary path: ./bazel-5.1.1-linux-x86_64
+Bazel version: 5.1.1
+Python binary path: /u/jshong/miniconda3/envs/alpa/bin/python3
+Python version: 3.11
+NumPy version: 1.26.4
+MKL-DNN enabled: yes
+Target CPU: x86_64
+Target CPU features: release
+CUDA enabled: yes
+NCCL enabled: yes
+TPU enabled: no
+Remote TPU enabled: no
+ROCm enabled: no
+Plugin device enabled: no
+
+Building XLA and installing it in the jaxlib source tree...
+./bazel-5.1.1-linux-x86_64 run --verbose_failures=true --linkopt=-lnccl :build_wheel -- --output_path=/scratch/bdkz/jshong/alpa/build_jaxlib/dist --cpu=x86_64 --dev_install
+Obtaining file:///scratch/bdkz/jshong/alpa/build_jaxlib/dist
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Requirement already satisfied: scipy>=1.5 in /u/jshong/miniconda3/envs/alpa/lib/python3.11/site-packages (from jaxlib==0.3.22) (1.15.2)
+Requirement already satisfied: numpy>=1.20 in /u/jshong/miniconda3/envs/alpa/lib/python3.11/site-packages (from jaxlib==0.3.22) (1.26.4)
+Requirement already satisfied: absl-py in /u/jshong/miniconda3/envs/alpa/lib/python3.11/site-packages (from jaxlib==0.3.22) (2.2.1)
+Installing collected packages: jaxlib
+  Attempting uninstall: jaxlib
+    Found existing installation: jaxlib 0.5.3
+    Uninstalling jaxlib-0.5.3:
+      Successfully uninstalled jaxlib-0.5.3
+  Running setup.py develop for jaxlib
+Successfully installed jaxlib-0.3.22
+2025-03-29 21:30:19,320	INFO usage_lib.py:472 -- Usage stats collection is enabled. To disable this, add `--disable-usage-stats` to the command that starts the cluster, or run the following command: `ray disable-usage-stats` before starting the cluster. See https://docs.ray.io/en/master/cluster/usage-stats.html for more details.
+2025-03-29 21:30:19,320	INFO scripts.py:861 -- Local node IP: 141.142.254.116
+2025-03-29 21:30:20,540	SUCC scripts.py:897 -- --------------------
+2025-03-29 21:30:20,541	SUCC scripts.py:898 -- Ray runtime started.
+2025-03-29 21:30:20,541	SUCC scripts.py:899 -- --------------------
+2025-03-29 21:30:20,541	INFO scripts.py:901 -- Next steps
+2025-03-29 21:30:20,541	INFO scripts.py:904 -- To add another node to this Ray cluster, run
+2025-03-29 21:30:20,541	INFO scripts.py:907 --   ray start --address='141.142.254.116:6379'
+2025-03-29 21:30:20,541	INFO scripts.py:916 -- To connect to this Ray cluster:
+2025-03-29 21:30:20,541	INFO scripts.py:918 -- import ray
+2025-03-29 21:30:20,541	INFO scripts.py:919 -- ray.init()
+2025-03-29 21:30:20,541	INFO scripts.py:950 -- To terminate the Ray runtime, run
+2025-03-29 21:30:20,541	INFO scripts.py:951 --   ray stop
+2025-03-29 21:30:20,541	INFO scripts.py:954 -- To view the status of the cluster, use
+2025-03-29 21:30:20,541	INFO scripts.py:955 --   ray status
+2025-03-29 21:30:21,306	VINFO scripts.py:1210 -- Send termination request to `/u/jshong/miniconda3/envs/alpa/lib/python3.11/site-packages/ray/core/src/ray/raylet/raylet --raylet_socket_name=/tmp/ray/session_2025-03-29_21-30-19_321327_2459132/sockets/raylet --store_socket_name=/tmp/ray/session_2025-03-29_21-30-19_321327_2459132/sockets/plasma_store --object_manager_port=0 --min_worker_port=10002 --max_worker_port=19999 --node_manager_port=0 --node_id=abcec83e9ecfd09c7a8ba8e880825869eb292add5c2e5df4610adbd6 --node_ip_address=141.142.254.116 --maximum_startup_concurrency=64 --static_resource_list=node:141.142.254.116,1.0,node:__internal_head__,1.0,accelerator_type:A40,1,CPU,64,GPU,1,memory,164668889908,object_store_memory,70572381388 "--python_worker_command=/u/jshong/miniconda3/envs/alpa/bin/python /u/jshong/miniconda3/envs/alpa/lib/python3.11/site-packages/ray/_private/workers/setup_worker.py /u/jshong/miniconda3/envs/alpa/lib/python3.11/site-packages/ray/_private/workers/default_worker.py --node-ip-address=141.142.254.116 --node-manager-port=RAY_NODE_MANAGER_PORT_PLACEHOLDER --object-store-name=/tmp/ray/session_2025-03-29_21-30-19_321327_2459132/sockets/plasma_store --raylet-name=/tmp/ray/session_2025-03-29_21-30-19_321327_2459132/sockets/raylet --redis-address=None --metrics-agent-port=62411 --logging-rotate-bytes=536870912 --logging-rotate-backup-count=5 --runtime-env-agent-port=61036 --gcs-address=141.142.254.116:6379 --session-name=session_2025-03-29_21-30-19_321327_2459132 --temp-dir=/tmp/ray --webui= --cluster-id=7616d5941528f19dd381170d9675b3ba3468f6b06ea5a226f8af7884 RAY_WORKER_DYNAMIC_OPTION_PLACEHOLDER" "--java_worker_command=/u/jshong/miniconda3/envs/alpa/bin/python /u/jshong/miniconda3/envs/alpa/lib/python3.11/site-packages/ray/_private/workers/setup_worker.py -Dray.address=141.142.254.116:6379 -Dray.raylet.node-manager-port=RAY_NODE_MANAGER_PORT_PLACEHOLDER -Dray.object-store.socket-name=/tmp/ray/session_2025-03-29_21-30-19_321327_2459132/sockets/plasma_store -Dray.raylet.socket-name=/tmp/ray/session_2025-03-29_21-30-19_321327_2459132/sockets/raylet -Dray.redis.username= -Dray.redis.password= -Dray.node-ip=141.142.254.116 -Dray.home=/u/jshong/miniconda3/envs/alpa/lib/python3.11/site-packages/ray/../.. -Dray.logging.dir=/tmp/ray/session_2025-03-29_21-30-19_321327_2459132/logs -Dray.session-dir=/tmp/ray/session_2025-03-29_21-30-19_321327_2459132 RAY_WORKER_DYNAMIC_OPTION_PLACEHOLDER io.ray.runtime.runner.worker.DefaultWorker" --cpp_worker_command= --native_library_path=/u/jshong/miniconda3/envs/alpa/lib/python3.11/site-packages/ray/cpp/lib --temp_dir=/tmp/ray --session_dir=/tmp/ray/session_2025-03-29_21-30-19_321327_2459132 --log_dir=/tmp/ray/session_2025-03-29_21-30-19_321327_2459132/logs --resource_dir=/tmp/ray/session_2025-03-29_21-30-19_321327_2459132/runtime_resources --metrics-agent-port=62411 --metrics_export_port=65271 --runtime_env_agent_port=61036 --object_store_memory=70572381388 --plasma_directory=/dev/shm --ray-debugger-external=0 --gcs-address=141.142.254.116:6379 --session-name=session_2025-03-29_21-30-19_321327_2459132 --labels= --cluster-id=7616d5941528f19dd381170d9675b3ba3468f6b06ea5a226f8af7884 --stdout_filepath=/tmp/ray/session_2025-03-29_21-30-19_321327_2459132/logs/raylet.out --stderr_filepath=/tmp/ray/session_2025-03-29_21-30-19_321327_2459132/logs/raylet.err --head --num_prestart_python_workers=64 "--dashboard_agent_command=/u/jshong/miniconda3/envs/alpa/bin/python -u /u/jshong/miniconda3/envs/alpa/lib/python3.11/site-packages/ray/dashboard/agent.py --node-ip-address=141.142.254.116 --metrics-export-port=65271 --dashboard-agent-port=62411 --listen-port=52365 --node-manager-port=RAY_NODE_MANAGER_PORT_PLACEHOLDER --object-store-name=/tmp/ray/session_2025-03-29_21-30-19_321327_2459132/sockets/plasma_store --raylet-name=/tmp/ray/session_2025-03-29_21-30-19_321327_2459132/sockets/raylet --temp-dir=/tmp/ray --session-dir=/tmp/ray/session_2025-03-29_21-30-19_321327_2459132 --log-dir=/tmp/ray/session_2025-03-29_21-30-19_321327_2459132/logs --logging-rotate-bytes=536870912 --logging-rotate-backup-count=5 --session-name=session_2025-03-29_21-30-19_321327_2459132 --gcs-address=141.142.254.116:6379 --cluster-id-hex=7616d5941528f19dd381170d9675b3ba3468f6b06ea5a226f8af7884 --minimal" "--runtime_env_agent_command=/u/jshong/miniconda3/envs/alpa/bin/python -u /u/jshong/miniconda3/envs/alpa/lib/python3.11/site-packages/ray/_private/runtime_env/agent/main.py --node-ip-address=141.142.254.116 --runtime-env-agent-port=61036 --gcs-address=141.142.254.116:6379 --cluster-id-hex=7616d5941528f19dd381170d9675b3ba3468f6b06ea5a226f8af7884 --runtime-env-dir=/tmp/ray/session_2025-03-29_21-30-19_321327_2459132/runtime_resources --logging-rotate-bytes=536870912 --logging-rotate-backup-count=5 --log-dir=/tmp/ray/session_2025-03-29_21-30-19_321327_2459132/logs --temp-dir=/tmp/ray"` (via SIGTERM)
+2025-03-29 21:30:21,438	INFO scripts.py:1240 -- 1/1 stopped.2025-03-29 21:30:21,557	VINFO scripts.py:1210 -- Send termination request to `/u/jshong/miniconda3/envs/alpa/bin/python -u /u/jshong/miniconda3/envs/alpa/lib/python3.11/site-packages/ray/autoscaler/_private/monitor.py --logs-dir=/tmp/ray/session_2025-03-29_21-30-19_321327_2459132/logs --logging-rotate-bytes=536870912 --logging-rotate-backup-count=5 --gcs-address=141.142.254.116:6379 --monitor-ip=141.142.254.116` (via SIGTERM)
+2025-03-29 21:30:21,557	VINFO scripts.py:1210 -- Send termination request to `/u/jshong/miniconda3/envs/alpa/bin/python -u /u/jshong/miniconda3/envs/alpa/lib/python3.11/site-packages/ray/_private/log_monitor.py --session-dir=/tmp/ray/session_2025-03-29_21-30-19_321327_2459132 --logs-dir=/tmp/ray/session_2025-03-29_21-30-19_321327_2459132/logs --gcs-address=141.142.254.116:6379 --logging-rotate-bytes=536870912 --logging-rotate-backup-count=5` (via SIGTERM)
+2025-03-29 21:30:21,560	VINFO scripts.py:1210 -- Send termination request to `/u/jshong/miniconda3/envs/alpa/bin/python -u /u/jshong/miniconda3/envs/alpa/lib/python3.11/site-packages/ray/_private/log_monitor.py --session-dir=/tmp/ray/session_2025-03-29_21-30-19_321327_2459132 --logs-dir=/tmp/ray/session_2025-03-29_21-30-19_321327_2459132/logs --gcs-address=141.142.254.116:6379 --logging-rotate-bytes=536870912 --logging-rotate-backup-count=5` (via SIGTERM)
+2025-03-29 21:30:21,562	VINFO scripts.py:1210 -- Send termination request to `/u/jshong/miniconda3/envs/alpa/bin/python /u/jshong/miniconda3/envs/alpa/lib/python3.11/site-packages/ray/dashboard/dashboard.py --host=127.0.0.1 --port=8265 --port-retries=0 --temp-dir=/tmp/ray --log-dir=/tmp/ray/session_2025-03-29_21-30-19_321327_2459132/logs --session-dir=/tmp/ray/session_2025-03-29_21-30-19_321327_2459132 --logging-rotate-bytes=536870912 --logging-rotate-backup-count=5 --gcs-address=141.142.254.116:6379 --cluster-id-hex=7616d5941528f19dd381170d9675b3ba3468f6b06ea5a226f8af7884 --node-ip-address=141.142.254.116 --minimal` (via SIGTERM)
+2025-03-29 21:30:21,563	INFO scripts.py:1240 -- 1/3 stopped.2025-03-29 21:30:21,570	INFO scripts.py:1240 -- 2/3 stopped.2025-03-29 21:30:22,154	INFO scripts.py:1240 -- 3/3 stopped.2025-03-29 21:30:22,274	VINFO scripts.py:1210 -- Send termination request to `/u/jshong/miniconda3/envs/alpa/lib/python3.11/site-packages/ray/core/src/ray/gcs/gcs_server --log_dir=/tmp/ray/session_2025-03-29_21-30-19_321327_2459132/logs --config_list=eyJvYmplY3Rfc3BpbGxpbmdfY29uZmlnIjogIntcInR5cGVcIjogXCJmaWxlc3lzdGVtXCIsIFwicGFyYW1zXCI6IHtcImRpcmVjdG9yeV9wYXRoXCI6IFwiL3RtcC9yYXkvc2Vzc2lvbl8yMDI1LTAzLTI5XzIxLTMwLTE5XzMyMTMyN18yNDU5MTMyXCJ9fSIsICJpc19leHRlcm5hbF9zdG9yYWdlX3R5cGVfZnMiOiB0cnVlfQ== --gcs_server_port=6379 --metrics-agent-port=62411 --node-ip-address=141.142.254.116 --session-name=session_2025-03-29_21-30-19_321327_2459132 --ray-commit=daca7b2b1a950dc7f731e34e74c76ae383794ffe --stdout_filepath=/tmp/ray/session_2025-03-29_21-30-19_321327_2459132/logs/gcs_server.out --stderr_filepath=/tmp/ray/session_2025-03-29_21-30-19_321327_2459132/logs/gcs_server.err` (via SIGTERM)
+2025-03-29 21:30:22,407	INFO scripts.py:1240 -- 1/1 stopped.2025-03-29 21:30:22,407	SUCC scripts.py:1285 -- Stopped all 5 Ray processes.

@@ -1,0 +1,115 @@
+Running "module reset". Resetting modules to system default. The following $MODULEPATH directories have been removed: None
+
+Currently Loaded Modules:
+  1) gcc/11.4.0      3) cuda/11.8.0         5) slurm-env/0.1
+  2) openmpi/4.1.6   4) cue-login-env/1.1   6) default-s11
+
+ 
+
+  DEPRECATION: Legacy editable install of alpa[dev]==1.0.0.dev0 from file:///scratch/bdkz/jshong/alpa (setup.py develop) is deprecated. pip 25.1 will enforce this behaviour change. A possible replacement is to add a pyproject.toml or enable --use-pep517, and use setuptools >= 64. If the resulting installation is not behaving as expected, try using --config-settings editable_mode=compat. Please consult the setuptools documentation for more information. Discussion can be found at https://github.com/pypa/pip/issues/11457
+Extracting Bazel installation...
+Starting local Bazel server and connecting to it...
+INFO: Options provided by the client:
+  Inherited 'common' options: --isatty=0 --terminal_columns=80
+INFO: Reading rc options for 'run' from /scratch/bdkz/jshong/alpa/build_jaxlib/.bazelrc:
+  Inherited 'common' options: --experimental_repo_remote_exec
+INFO: Reading rc options for 'run' from /scratch/bdkz/jshong/alpa/build_jaxlib/.bazelrc:
+  Inherited 'build' options: --apple_platform_type=macos --macos_minimum_os=10.14 --announce_rc --define open_source_build=true --spawn_strategy=standalone --enable_platform_specific_config --experimental_cc_shared_library --define=no_aws_support=true --define=no_gcp_support=true --define=no_hdfs_support=true --define=no_kafka_support=true --define=no_ignite_support=true --define=grpc_no_ares=true -c opt --config=short_logs --copt=-DMLIR_PYTHON_PACKAGE_PREFIX=jaxlib.mlir. --@org_tensorflow//tensorflow/compiler/xla/python:enable_gpu=false --@org_tensorflow//tensorflow/compiler/xla/python:enable_tpu=false --@org_tensorflow//tensorflow/compiler/xla/python:enable_plugin_device=false
+INFO: Reading rc options for 'run' from /scratch/bdkz/jshong/alpa/build_jaxlib/.jax_configure.bazelrc:
+  Inherited 'build' options: --strategy=Genrule=standalone --repo_env PYTHON_BIN_PATH=/u/jshong/miniconda3/envs/alpa/bin/python3 --action_env=PYENV_ROOT --python_path=/u/jshong/miniconda3/envs/alpa/bin/python3 --distinct_host_configuration=false --override_repository=org_tensorflow=/scratch/bdkz/jshong/alpa/build_jaxlib/../third_party/tensorflow-alpa --override_repository=local_config_nccl=/scratch/bdkz/jshong/third_party/local_nccl --action_env=CUDA_HOME=/sw/spack/deltas11-2023-03/apps/linux-rhel8-zen3/gcc-11.4.0/cuda-11.8.0-vfixfmc --action_env=CUDA_TOOLKIT_PATH=/sw/spack/deltas11-2023-03/apps/linux-rhel8-zen3/gcc-11.4.0/cuda-11.8.0-vfixfmc --action_env=CUDNN_INSTALL_PATH=/sw/external/libraries/cudnn-linux-x86_64-8.9.0.131_cuda11-archive --action_env=CUDNN_INCLUDE_DIR=/sw/external/libraries/cudnn-linux-x86_64-8.9.0.131_cuda11-archive/include --action_env=CUDNN_LIB_DIR=/sw/external/libraries/cudnn-linux-x86_64-8.9.0.131_cuda11-archive/lib --action_env=CUDNN_HOME=/sw/external/libraries/cudnn-linux-x86_64-8.9.0.131_cuda11-archive --action_env=TF_CUDA_PATHS=/sw/spack/deltas11-2023-03/apps/linux-rhel8-zen3/gcc-11.4.0/cuda-11.8.0-vfixfmc --action_env=TF_CUDA_VERSION=11.8 --action_env=TF_CUDNN_VERSION=8 --action_env=TF_NEED_CUDA=1 --action_env=TF_CUDA_COMPUTE_CAPABILITIES=86 --action_env=NCCL_HOME=/sw/spack/deltas11-2023-03/apps/linux-rhel8-zen3/gcc-11.4.0/nccl-2.19.3-1-464jrf3 --action_env=NCCL_INCLUDE_DIR=/sw/spack/deltas11-2023-03/apps/linux-rhel8-zen3/gcc-11.4.0/nccl-2.19.3-1-464jrf3/include --action_env=NCCL_LIB_DIR=/sw/spack/deltas11-2023-03/apps/linux-rhel8-zen3/gcc-11.4.0/nccl-2.19.3-1-464jrf3/lib --action_env=TF_NCCL_VERSION=2.19.3 --action_env=TF_NCCL_PATHS=/sw/spack/deltas11-2023-03/apps/linux-rhel8-zen3/gcc-11.4.0/nccl-2.19.3-1-464jrf3 --action_env=PATH=/sw/spack/deltas11-2023-03/apps/linux-rhel8-zen3/gcc-11.4.0/cuda-11.8.0-vfixfmc/bin:/opt/cray/libfabric/1.15.2.0/bin:/u/jshong/miniconda3/envs/alpa/bin:/sw/spack/deltas11-2023-03/apps/linux-rhel8-zen3/gcc-11.4.0/cuda-11.8.0-vfixfmc/bin:/sw/spack/deltas11-2023-03/apps/linux-rhel8-zen3/gcc-11.4.0/openmpi-4.1.6-lranp74/bin:/sw/spack/deltas11-2023-03/apps/linux-rhel8-x86_64/gcc-8.5.0/gcc-11.4.0-yycklku/bin:/sw/user/scripts:/u/jshong/miniconda3/condabin:/u/jshong/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/bin/remote-cli:/u/jshong/.local/bin:/u/jshong/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ddn/ime/bin:/opt/puppetlabs/bin:/u/jshong/.vscode-server/extensions/ms-python.debugpy-2025.4.1-linux-x64/bundled/scripts/noConfigScripts --action_env=LD_LIBRARY_PATH=/sw/spack/deltas11-2023-03/apps/linux-rhel8-zen3/gcc-11.4.0/nccl-2.19.3-1-464jrf3/lib:/sw/external/libraries/cudnn-linux-x86_64-8.9.0.131_cuda11-archive/lib:/sw/external/libraries/cudnn-linux-x86_64-8.9.0.131_cuda11-archive/lib:/sw/external/slingshot11/aws-ofi-nccl-1.6.0-plugin/lib:/sw/spack/deltas11-2023-03/apps/linux-rhel8-zen3/gcc-11.4.0/nccl-2.19.3-1-464jrf3/lib:/opt/cray/libfabric/1.15.2.0/lib64:/sw/spack/deltas11-2023-03/apps/linux-rhel8-zen3/gcc-11.4.0/cuda-11.8.0-vfixfmc/lib64:/opt/cray/libfabric/1.15.2.0/lib:/sw/spack/deltas11-2023-03/apps/linux-rhel8-zen3/gcc-11.4.0/openmpi-4.1.6-lranp74/lib --action_env=CPATH=/sw/spack/deltas11-2023-03/apps/linux-rhel8-zen3/gcc-11.4.0/nccl-2.19.3-1-464jrf3/include:/sw/external/libraries/cudnn-linux-x86_64-8.9.0.131_cuda11-archive/include: --action_env=LIBRARY_PATH=/sw/spack/deltas11-2023-03/apps/linux-rhel8-zen3/gcc-11.4.0/nccl-2.19.3-1-464jrf3/lib:/sw/external/libraries/cudnn-linux-x86_64-8.9.0.131_cuda11-archive/lib:/sw/spack/deltas11-2023-03/apps/linux-rhel8-zen3/gcc-11.4.0/nccl-2.19.3-1-464jrf3/lib:/sw/spack/deltas11-2023-03/apps/linux-rhel8-zen3/gcc-11.4.0/gcc-runtime-11.4.0-zz3o2s4/lib:/sw/spack/deltas11-2023-03/apps/linux-rhel8-zen3/gcc-11.4.0/cuda-11.8.0-vfixfmc/lib64:/sw/spack/deltas11-2023-03/apps/linux-rhel8-zen3/gcc-11.4.0/openmpi-4.1.6-lranp74/lib:/sw/spack/deltas11-2023-03/apps/linux-rhel8-x86_64/gcc-8.5.0/gcc-11.4.0-yycklku/lib64:/sw/spack/deltas11-2023-03/apps/linux-rhel8-x86_64/gcc-8.5.0/gcc-11.4.0-yycklku/lib --config=avx_posix --config=mkl_open_source_only --config=cuda --action_env TF_NCCL_VERSION=2.19.3
+INFO: Found applicable config definition build:short_logs in file /scratch/bdkz/jshong/alpa/build_jaxlib/.bazelrc: --output_filter=DONT_MATCH_ANYTHING
+INFO: Found applicable config definition build:avx_posix in file /scratch/bdkz/jshong/alpa/build_jaxlib/.bazelrc: --copt=-mavx --host_copt=-mavx
+INFO: Found applicable config definition build:mkl_open_source_only in file /scratch/bdkz/jshong/alpa/build_jaxlib/.bazelrc: --define=tensorflow_mkldnn_contraction_kernel=1
+INFO: Found applicable config definition build:cuda in file /scratch/bdkz/jshong/alpa/build_jaxlib/.bazelrc: --repo_env TF_NEED_CUDA=1 --action_env TF_CUDA_COMPUTE_CAPABILITIES=sm_35,sm_52,sm_60,sm_70,compute_80 --crosstool_top=@local_config_cuda//crosstool:toolchain --@local_config_cuda//:enable_cuda --@org_tensorflow//tensorflow/compiler/xla/python:enable_gpu=true --define=xla_python_enable_gpu=true
+INFO: Found applicable config definition build:linux in file /scratch/bdkz/jshong/alpa/build_jaxlib/.bazelrc: --config=posix --copt=-Wno-unknown-warning-option --copt=-Wno-stringop-truncation --copt=-Wno-array-parameter
+INFO: Found applicable config definition build:posix in file /scratch/bdkz/jshong/alpa/build_jaxlib/.bazelrc: --copt=-fvisibility=hidden --copt=-Wno-sign-compare --cxxopt=-std=c++17 --host_cxxopt=-std=c++17
+WARNING: Download from https://storage.googleapis.com/mirror.tensorflow.org/github.com/tensorflow/runtime/archive/4ce3e4da2e21ae4dfcee9366415e55f408c884ec.tar.gz failed: class java.io.FileNotFoundException GET returned 404 Not Found
+INFO: Repository llvm-raw instantiated at:
+  /scratch/bdkz/jshong/alpa/build_jaxlib/WORKSPACE:35:14: in <toplevel>
+  /scratch/bdkz/jshong/cache/bazel/_bazel_jshong/cb4c035d09312e9d44318b9b7690cf91/external/org_tensorflow/tensorflow/workspace3.bzl:41:9: in workspace
+  /scratch/bdkz/jshong/cache/bazel/_bazel_jshong/cb4c035d09312e9d44318b9b7690cf91/external/org_tensorflow/third_party/llvm/workspace.bzl:10:20: in repo
+  /scratch/bdkz/jshong/cache/bazel/_bazel_jshong/cb4c035d09312e9d44318b9b7690cf91/external/org_tensorflow/third_party/repo.bzl:136:21: in tf_http_archive
+Repository rule _tf_http_archive defined at:
+  /scratch/bdkz/jshong/cache/bazel/_bazel_jshong/cb4c035d09312e9d44318b9b7690cf91/external/org_tensorflow/third_party/repo.bzl:89:35: in <toplevel>
+ERROR: An error occurred during the fetch of repository 'llvm-raw':
+   Traceback (most recent call last):
+	File "/scratch/bdkz/jshong/cache/bazel/_bazel_jshong/cb4c035d09312e9d44318b9b7690cf91/external/org_tensorflow/third_party/repo.bzl", line 73, column 33, in _tf_http_archive_impl
+		ctx.download_and_extract(
+Error in download_and_extract: java.io.IOException: Error extracting /scratch/bdkz/jshong/cache/bazel/_bazel_jshong/cb4c035d09312e9d44318b9b7690cf91/external/llvm-raw/temp17246514036034212189/d8415b02a519f222ecf71b069c96cc85ac635de3.tar.gz to /scratch/bdkz/jshong/cache/bazel/_bazel_jshong/cb4c035d09312e9d44318b9b7690cf91/external/llvm-raw/temp17246514036034212189: /scratch/bdkz/jshong/cache/bazel/_bazel_jshong/cb4c035d09312e9d44318b9b7690cf91/external/llvm-raw/llvm/test/Analysis/CostModel/AMDGPU/fabs.ll (No such file or directory)
+ERROR: /scratch/bdkz/jshong/alpa/build_jaxlib/WORKSPACE:35:14: fetching _tf_http_archive rule //external:llvm-raw: Traceback (most recent call last):
+	File "/scratch/bdkz/jshong/cache/bazel/_bazel_jshong/cb4c035d09312e9d44318b9b7690cf91/external/org_tensorflow/third_party/repo.bzl", line 73, column 33, in _tf_http_archive_impl
+		ctx.download_and_extract(
+Error in download_and_extract: java.io.IOException: Error extracting /scratch/bdkz/jshong/cache/bazel/_bazel_jshong/cb4c035d09312e9d44318b9b7690cf91/external/llvm-raw/temp17246514036034212189/d8415b02a519f222ecf71b069c96cc85ac635de3.tar.gz to /scratch/bdkz/jshong/cache/bazel/_bazel_jshong/cb4c035d09312e9d44318b9b7690cf91/external/llvm-raw/temp17246514036034212189: /scratch/bdkz/jshong/cache/bazel/_bazel_jshong/cb4c035d09312e9d44318b9b7690cf91/external/llvm-raw/llvm/test/Analysis/CostModel/AMDGPU/fabs.ll (No such file or directory)
+INFO: Reading rc options for 'run' from /scratch/bdkz/jshong/alpa/build_jaxlib/.bazelrc:
+  Inherited 'build' options: --apple_platform_type=macos --macos_minimum_os=10.14 --announce_rc --define open_source_build=true --spawn_strategy=standalone --enable_platform_specific_config --experimental_cc_shared_library --define=no_aws_support=true --define=no_gcp_support=true --define=no_hdfs_support=true --define=no_kafka_support=true --define=no_ignite_support=true --define=grpc_no_ares=true -c opt --config=short_logs --copt=-DMLIR_PYTHON_PACKAGE_PREFIX=jaxlib.mlir. --@org_tensorflow//tensorflow/compiler/xla/python:enable_gpu=false --@org_tensorflow//tensorflow/compiler/xla/python:enable_tpu=false --@org_tensorflow//tensorflow/compiler/xla/python:enable_plugin_device=false
+INFO: Found applicable config definition build:cuda in file /scratch/bdkz/jshong/alpa/build_jaxlib/.bazelrc: --repo_env TF_NEED_CUDA=1 --action_env TF_CUDA_COMPUTE_CAPABILITIES=sm_35,sm_52,sm_60,sm_70,compute_80 --crosstool_top=@local_config_cuda//crosstool:toolchain --@local_config_cuda//:enable_cuda --@org_tensorflow//tensorflow/compiler/xla/python:enable_gpu=true --define=xla_python_enable_gpu=true
+ERROR: @org_tensorflow//tensorflow/compiler/xla/python:enable_gpu :: Error loading option @org_tensorflow//tensorflow/compiler/xla/python:enable_gpu: no such package '@llvm-raw//utils/bazel': java.io.IOException: Error extracting /scratch/bdkz/jshong/cache/bazel/_bazel_jshong/cb4c035d09312e9d44318b9b7690cf91/external/llvm-raw/temp17246514036034212189/d8415b02a519f222ecf71b069c96cc85ac635de3.tar.gz to /scratch/bdkz/jshong/cache/bazel/_bazel_jshong/cb4c035d09312e9d44318b9b7690cf91/external/llvm-raw/temp17246514036034212189: /scratch/bdkz/jshong/cache/bazel/_bazel_jshong/cb4c035d09312e9d44318b9b7690cf91/external/llvm-raw/llvm/test/Analysis/CostModel/AMDGPU/fabs.ll (No such file or directory)
+Traceback (most recent call last):
+  File "/scratch/bdkz/jshong/alpa/build_jaxlib/build/build.py", line 580, in <module>
+    main()
+  File "/scratch/bdkz/jshong/alpa/build_jaxlib/build/build.py", line 575, in main
+    shell(command)
+  File "/scratch/bdkz/jshong/alpa/build_jaxlib/build/build.py", line 53, in shell
+    output = subprocess.check_output(cmd)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/u/jshong/miniconda3/envs/alpa/lib/python3.11/subprocess.py", line 466, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/u/jshong/miniconda3/envs/alpa/lib/python3.11/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['./bazel-5.1.1-linux-x86_64', 'run', '--verbose_failures=true', '--linkopt=-lnccl', ':build_wheel', '--', '--output_path=/scratch/bdkz/jshong/alpa/build_jaxlib/dist', '--cpu=x86_64', '--dev_install']' returned non-zero exit status 2.
+
+real	40m54.750s
+user	0m2.268s
+sys	0m2.233s
+  DEPRECATION: Legacy editable install of jaxlib==0.3.22 from file:///scratch/bdkz/jshong/alpa/build_jaxlib/dist (setup.py develop) is deprecated. pip 25.1 will enforce this behaviour change. A possible replacement is to add a pyproject.toml or enable --use-pep517, and use setuptools >= 64. If the resulting installation is not behaving as expected, try using --config-settings editable_mode=compat. Please consult the setuptools documentation for more information. Discussion can be found at https://github.com/pypa/pip/issues/11457
+Traceback (most recent call last):
+  File "/scratch/bdkz/jshong/alpa/run_alpa.py", line 12, in <module>
+    import alpa
+  File "/scratch/bdkz/jshong/alpa/alpa/__init__.py", line 3, in <module>
+    from . import api
+  File "/scratch/bdkz/jshong/alpa/alpa/api.py", line 4, in <module>
+    from jax import linear_util as lu
+  File "/u/jshong/miniconda3/envs/alpa/lib/python3.11/site-packages/jax/__init__.py", line 147, in <module>
+    from jax import nn as nn
+  File "/u/jshong/miniconda3/envs/alpa/lib/python3.11/site-packages/jax/nn/__init__.py", line 19, in <module>
+    from jax._src.nn.functions import (
+  File "/u/jshong/miniconda3/envs/alpa/lib/python3.11/site-packages/jax/_src/nn/functions.py", line 30, in <module>
+    from jax.scipy.special import expit
+  File "/u/jshong/miniconda3/envs/alpa/lib/python3.11/site-packages/jax/scipy/__init__.py", line 16, in <module>
+    from jax.scipy import linalg as linalg
+  File "/u/jshong/miniconda3/envs/alpa/lib/python3.11/site-packages/jax/scipy/linalg.py", line 15, in <module>
+    from jax._src.scipy.linalg import (
+  File "/u/jshong/miniconda3/envs/alpa/lib/python3.11/site-packages/jax/_src/scipy/linalg.py", line 409, in <module>
+    @_wraps(scipy.linalg.tril)
+            ^^^^^^^^^^^^^^^^^
+AttributeError: module 'scipy.linalg' has no attribute 'tril'
+Python path configuration:
+  PYTHONHOME = (not set)
+  PYTHONPATH = (not set)
+  program name = '/u/jshong/miniconda3/envs/alpa/bin/python'
+  isolated = 0
+  environment = 1
+  user site = 1
+  safe_path = 0
+  import site = 1
+  is in build tree = 0
+  stdlib dir = '/u/jshong/miniconda3/envs/alpa/lib/python3.11'
+  sys._base_executable = '/u/jshong/miniconda3/envs/alpa/bin/python'
+  sys.base_prefix = '/u/jshong/miniconda3/envs/alpa'
+  sys.base_exec_prefix = '/u/jshong/miniconda3/envs/alpa'
+  sys.platlibdir = 'lib'
+  sys.executable = '/u/jshong/miniconda3/envs/alpa/bin/python'
+  sys.prefix = '/u/jshong/miniconda3/envs/alpa'
+  sys.exec_prefix = '/u/jshong/miniconda3/envs/alpa'
+  sys.path = [
+    '/u/jshong/miniconda3/envs/alpa/lib/python311.zip',
+    '/u/jshong/miniconda3/envs/alpa/lib/python3.11',
+    '/u/jshong/miniconda3/envs/alpa/lib/python3.11/lib-dynload',
+  ]
+Fatal Python error: init_fs_encoding: failed to get the Python codec of the filesystem encoding
+Python runtime state: core initialized
+LookupError: no codec search functions registered: can't find encoding
+
+Current thread 0x00007f2112dbe740 (most recent call first):
+  <no Python frame>
