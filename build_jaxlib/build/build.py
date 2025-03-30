@@ -565,7 +565,7 @@ def main():
 
 
   command = ([bazel_path] + args.bazel_startup_options +
-    ["run", "--verbose_failures=true"] +
+    ["run", "--verbose_failures=true", "--linkopt=-lnccl"] +  # <--- add this line
     [":build_wheel", "--",
     f"--output_path={output_path}",
     f"--cpu={wheel_cpu}"])
