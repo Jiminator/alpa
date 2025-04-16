@@ -70,3 +70,4 @@ docs/tutorials
 
 # macOS temp files
 .DS_Store
+.qodo
