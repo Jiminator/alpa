@@ -83,7 +83,7 @@ def get_cuda_version_str(no_dot=False):
 
 install_require_list = [
     "tqdm",
-    "ray<=2.6.3",
+    "ray[default]<=2.6.3",
     "jax==0.3.22",
     "chex==0.1.5",
     "flax==0.6.2",
@@ -91,6 +91,7 @@ install_require_list = [
     "numpy<2.0.0",
     "scipy==1.12.0",
     "numba",
+    "async_timeout"
 ]
 
 dev_require_list = ["yapf==0.32.0", "pylint==2.14.0", "cmake", "pybind11"]
